@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_bluetooth"
+        android:icon="@drawable/ic_baseline_bluetooth_24"
+        android:title="Bluetooth" />
+
+    <item
+        android:id="@+id/fragment_button"
+        android:icon="@drawable/ic_baseline_gamepad_24"
+        android:title="Button" />
+
+    <item
+        android:id="@+id/fragment_sound"
+        android:icon="@drawable/ic_baseline_mic_24"
+        android:title="Sound" />
+
+</menu>

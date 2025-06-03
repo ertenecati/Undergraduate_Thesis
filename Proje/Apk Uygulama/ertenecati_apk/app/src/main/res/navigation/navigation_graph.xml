@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragment_bluetooth">
+
+    <fragment
+        android:id="@+id/fragment_bluetooth"
+        android:name="com.ertenecati.presentation.BluetoothFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_bluetooth" />
+
+    <action
+        android:id="@+id/action_global_bluetooth_fragment"
+        app:destination="@+id/fragment_bluetooth"
+        app:popUpTo="@id/fragment_bluetooth"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/fragment_button"
+        android:name="com.ertenecati.presentation.ButtonFragment"
+        android:label="Search Fragment"
+        tools:layout="@layout/fragment_button" />
+
+    <action
+        android:id="@+id/action_global_button_fragment"
+        app:destination="@+id/button_fragment"
+        app:popUpTo="@id/fragment_button"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/fragment_sound"
+        android:name="com.ertenecati.presentation.SoundFragment"
+        android:label="Notification Fragment"
+        tools:layout="@layout/fragment_sound" />
+
+    <action
+        android:id="@+id/action_global_sound_fragment"
+        app:destination="@+id/fragment_sound"
+        app:popUpTo="@id/fragment_sound"
+        app:popUpToInclusive="true" />
+
+</navigation>
